@@ -1,0 +1,316 @@
+
+*{
+  margin:0; font-size: 100%; padding: 0;
+  box-sizing: border-box; font-family: 'Open Sans', sans-serif;
+}
+ nav, ul{list-style: none;}
+ a{text-decoration: none; cursor: pointer; opacity: 0.9;}
+ a:hover{opacity: 1;}
+
+ /* HEADER*/
+ header
+ {
+     width: 100%;
+     display: flex;
+     position: absolute;
+     top: 0;
+     left: 0;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 50px;
+     background-color: rgb(252, 252, 252);
+     height: 145px;
+ }
+nav img{
+   
+    height: 40px;
+    
+
+}
+ header img  
+ {
+     width: 50px;
+     border-radius: 50px;
+    
+ }
+
+ header nav
+ {
+     display: flex;
+     align-items: center;
+     
+ }
+ 
+
+ header li a
+ {
+     color:#ffffff;
+     font-size: larger;
+     padding-left: 3px;
+    
+    
+
+     
+ }
+
+ header li
+ {
+     margin: 0 15px;
+     display: inline;
+     ;
+     
+ }
+#barramenu{
+    background-color: rgb(40, 177, 187);
+   width: 370px;
+   height: 30px;
+   transition: 0.3 all;
+   
+ 
+   
+   
+}
+ header li:first-child{
+     margin-left: 0;
+ }
+
+ header li:last-child
+ {
+     margin-left: 0;
+ }
+
+ @media (max-width:700px) 
+ {
+       header{
+           flex-direction: column;
+       }
+       header img
+       {
+           margin-bottom: 15px;
+       }
+     
+ }
+
+ /*HERO*/
+ .hero{
+     background-image: url(img/bg_2.jpg);
+     background-size: cover;
+     min-height: 100vh;
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     text-align: center;
+ }
+ .hero h1
+ {
+     font-size: 3.2rem;
+     margin-bottom: 15px;
+ }
+
+ .hero h3
+ {
+     font-size: 2rem;
+     margin-bottom: 15px;
+ }
+ .hero .btn
+ {
+     background-color: #fff;
+     border-radius: 4px;
+     color: #191c03;
+     padding: 20px 50px;
+     text-transform: uppercase;
+ }
+ 
+ @media (max-width:700px) 
+ {
+    .hero h1{
+         font-size: 2.5rem;
+       }
+
+    .hero h3{
+        font-size: 1.5rem;
+    }
+      
+     
+ }
+
+ /* conheca-hotel */
+
+ .conheca-hotel
+ {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 100px 50px;
+ }
+ .conheca-hotel h3
+ {
+     font-size: 3rem;
+     margin-bottom: 30px;
+     color:  #191c03;
+     text-align: center;
+ }
+ .conheca-hotel p 
+ {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color:  #191c03;
+    text-align: center;
+ }
+ .conheca-hotel hr
+ {
+    width:200px;
+    height:2px;
+    background-color:#191c03;
+    margin-bottom: 70px;
+    border: none;
+ }
+
+ .conheca-hotel .grid
+ {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .conheca-hotel .grid li 
+ {
+     height: 350px;
+     padding: 20px;
+     border-radius: 4px;
+     background-clip: content-box;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .conheca-hotel .grid li.small
+ {
+     flex-basis: 40%;
+ }
+ .conheca-hotel .grid li.large
+ {
+     flex-basis: 60%;
+ }
+
+ @media (max-width:700px) 
+ {
+    .conheca-hotel .grid li.small
+    {
+        flex-basis: 100%;
+    }
+
+    .conheca-hotel .grid li.large
+ {
+     flex-basis: 100%;
+ }
+     
+ }
+
+ /*Carateristica*/
+
+ .carateristica
+ {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     padding: 100px 5px;
+     background-color:  #191c03;
+ }
+ .carateristica h3
+ {
+     text-align: center;
+     color:#fff;
+     font-size: 3rem;
+     margin-bottom: 35px;
+ }
+
+ .carateristica p
+ {
+     text-align: center;
+     max-width: 800px;
+     margin-bottom: 35px;
+     color: #fff;
+ }
+ .carateristica hr
+ {
+    width:200px;
+    height:2px;
+    background-color:#fff;
+    margin-bottom: 70px;
+    border: none;
+ }
+ .carateristica .grid
+ {
+   display: flex;
+   width: 100%;
+ }
+
+ .carateristica .grid li
+ {
+     padding: 0 30px;
+     text-align: center;
+ }
+ .carateristica .grid li .fa-location-arrow, .fa-gift,  .fa-home
+ {
+     color:#c3c63b;
+     font-size: 50px;
+     margin-bottom: 30px;
+
+ }
+ .carateristica .grid li h4
+ {
+     font-size: 1.4rem;
+     color:#c3c63b;
+     margin-bottom: 30px;
+ }
+ @media (max-width:700px) 
+ {
+    .carateristica .grid 
+    {
+        display: flex;
+        flex-direction: column;
+    
+    }
+     
+ }
+
+ /*footer*/
+
+ footer{
+     display: flex;
+     flex-direction: column;
+     background-color:#191c03 ;
+     padding: 50px 0px;
+     align-items: center;
+ }
+
+ footer ul
+ {
+     display: flex;
+     margin-bottom: 25px;
+ }
+
+ footer ul li
+ {
+     margin-right: 10px;
+ }
+
+ footer ul li:last-child
+ {
+     margin-right: 0;
+ }
+
+> Márcio Abreu:
+footer ul li a
+ {
+     color: #c3c63b;
+     font-size: 2rem;
+ }
+ footer p{
+    color: #c3c63b;
+    text-align: center;
+ }
+
+> Márcio Abreu:
